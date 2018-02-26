@@ -1,0 +1,39 @@
+.hero-image {
+  width: 100%;
+}
+
+.hero-image-container {
+  padding-top: $top-nav-height;
+  position: relative;
+}
+
+.hero-image-text-container {
+  width: 100%;
+  position: absolute;
+  padding-top: $top-nav-height;
+  top: 48.5%;
+  transform: translateY(-50%);
+  text-align: center;
+  h1,
+  h2,
+  a {
+    margin: 10px;
+  }
+  a {
+    background: $color-biege;
+    width: 210px;
+    padding: 12px 15px;
+    border-radius: 15px;
+    color: $color-white;
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (min-width: $break-phone) {
+
+}
+
+@media only screen and (min-width: $break-desktop) {
+
+}

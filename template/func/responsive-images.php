@@ -3,21 +3,45 @@
 // Usage:
 // do_action('ddd_add_responsive_image',
 // [
-//   'desktopName' => 'desk image',
-//   'desktopWidth' => '25vw',
-//   'tabletName' => null,
-//   'tabletWidth' => '25vw',
-//   'mobileName' => null,
-//   'mobileWidth' => '95vw',
-//   'altText' => null,
-//   'class' => null,
-//   'id' => null,
-//   'dataValue' => null
+  // 'desktopName' => 'desk image',
+  // 'desktopWidth' => '25vw',
+  // 'tabletName' => null,
+  // 'tabletWidth' => '25vw',
+  // 'mobileName' => null,
+  // 'mobileWidth' => '95vw',
+  // 'altText' => 'TestAltText',
+  // 'class' => null,
+  // 'id' => null,
+  // 'dataValue' => null,
+  // 'debug' => false,
+  // 'debugWidth' => 1900,
+  // 'debugHeight' => 500
 // ]);
 
-function ddd_image_responsive($args) {
-  $uploadDir = '//'.$_SERVER['HTTP_HOST'].'/wp-content/uploads/'.'responsive/';
+function ddd_image_responsive($args = array()) {
+  $defaults = array(
+      'desktopName' => 'desk image',
+      'desktopWidth' => '25vw',
+      'tabletName' => null,
+      'tabletWidth' => '25vw',
+      'mobileName' => null,
+      'mobileWidth' => '95vw',
+      'altText' => 'TestAltText',
+      'class' => null,
+      'id' => null,
+      'dataValue' => null,
+      'debug' => false,
+      'debugWidth' => 1900,
+      'debugHeight' => 500
+  );
+  $args = wp_parse_args( $args, $defaults);
 
+  if ($args['debug']) {
+    $placeholder = "http://via.placeholder.com/".$args['debugWidth']."x".$args['debugHeight'];
+    ?> <img src='<?php echo $placeholder ?>' style="width:100%"> <?php
+  } else {
+
+  $uploadDir = '//'.$_SERVER['HTTP_HOST'].'/wp-content/uploads/'.'responsive/';
   $tabletBreakpoint = '(max-width: 768px)';
   $desktopBreakpoint = '(max-width: 1024px)';
 
@@ -36,21 +60,9 @@ function ddd_image_responsive($args) {
   }
   $imageWidthMobile = $args['mobileWidth'];
   $altText = $args['altText'];
-  if (isset($args['class'])) {
-    $className = 'class="'.$args['class'].'"';
-  } else {
-    $className = null;
-  }
-  if (isset($args['id'])) {
-    $id = 'id="'.$args['id'].'"';
-  } else {
-    $id = null;
-  }
-  if(isset($args['data-value'])) {
-    $dataValue = 'data-value="'.$args['dataValue'].'"';
-  } else {
-    $dataValue = null;
-  }
+  $className = 'class="'.$args['class'].'"';
+  $id = 'id="'.$args['id'].'"';
+  $dataValue = 'data-value="'.$args['dataValue'].'"';
 
   ?>
   <picture>
@@ -154,6 +166,6 @@ function ddd_image_responsive($args) {
     >
     <img <?php echo $className ?> <?php echo $id ?> <?php echo $dataValue ?> src='<?php echo $uploadDir.$imageNameDesktop.'-1050px.jpg' ?>' alt='<?php echo $altText ?>'>
   </picture>
-  <?php
+  <?php }
 }
 add_action('ddd_add_responsive_image', 'ddd_image_responsive', 10); ?>

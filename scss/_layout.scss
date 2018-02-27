@@ -1,5 +1,5 @@
 .site-content-wrapper {
-  width: 90%;
+  width: $mobile-content-width;
   margin: auto;
 }
 
@@ -9,6 +9,6 @@
 
 @media only screen and (min-width: $break-desktop) {
   .site-content-wrapper {
-    width: 900px;
+    width: $desktop-content-width;
   }
 }

@@ -10,8 +10,14 @@
        url('../fonts/DancingScript/dancing-script.woff') format('woff');
 }
 
+// @font-face {
+//   font-family: 'Linux Libertine';
+//   src: url('../fonts/LinuxLibertine/linux-libertine.woff2') format('woff2'),
+//        url('../fonts/LinuxLibertine/linux-libertine.woff') format('woff');
+// }
+
 @font-face {
-  font-family: 'Linux Libertine';
-  src: url('../fonts/LinuxLibertine/linux-libertine.woff2') format('woff2'),
+  font-family: 'Caviar Dreams';
+  src: url('../fonts/CaviarDreams/caviar-dreams.woff2') format('woff2'),
        url('../fonts/LinuxLibertine/linux-libertine.woff') format('woff');
 }

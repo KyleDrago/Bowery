@@ -19,7 +19,7 @@
 <body>
   <header>
     <div class="main-nav-wrapper">
-      <div class="site-content-wrapper nav-wrapper">
+      <div class="nav-wrapper">
         <a href="<?php get_bloginfo('url'); ?>" class="logo">
           <!-- <img src="" alt="logo" class="logo-img"> -->
           <h1>The Bowery</h1>

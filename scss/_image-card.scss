@@ -29,6 +29,10 @@
   }
 }
 
+.home-page-grabber-grid-container {
+  margin: 0 auto -55px;
+}
+
 @media only screen and (min-width: $break-phone) {
   .image-card-container {
     width: 300px;
@@ -36,7 +40,7 @@
   }
   .home-page-grabber-grid-container {
     width: 750px;
-    margin: auto;
+    // margin: 0 auto -50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -50,7 +54,7 @@
   }
   .home-page-grabber-grid-container {
     width: 1100px;
-    margin: auto;
+    // margin: auto;
     // column-count: 3;
   }
 }

@@ -1,35 +1,46 @@
-button:focus {
-  outline: 0;
+.logo {
+  h1 {
+    font-size: rem(30px);
+  }
 }
 
 a {
   text-decoration: none;
   color: $color-black;
-  font-size: rem(20px);
-  font-family: 'Broadway';
+  font-size: rem(25px);
+  font-family: $font-body-text;
+}
+
+.nav-wrapper {
+  a {
+    font-family: $font-main-heading;
+  }
 }
 
 h1,
 h2 {
-  font-family: 'Broadway';
+  font-family: $font-main-heading;
+}
+
+h2 {
+
 }
 
 h3 {
-  font-family: 'Dancing Script';
+  font-family: $font-cursive;
 }
 
 p {
-  font-family: 'Linux Libertine';
+  font-family: $font-body-text;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5,
-h6,
 p {
   color: $color-black;
+  margin: 0;
 }
 
 .home-page-banner-text {
@@ -39,24 +50,160 @@ p {
 .footer {
   text-align: center;
   p {
-    font-family: 'Dancing Script';
+    font-family: $font-cursive;
   }
 }
 
 .contact-us-button {
-  font-family: 'Linux Libertine';
+  font-family: $font-body-text;
+  font-size: rem(15px);
+  display: block;
+  margin-top: 20px;
 }
 
-@media only screen and (min-width: $break-phone) {
-
-}
-@media only screen and (min-width: $break-desktop) {
+.hero-image-text-container {
   h1,
   h2,
   h3,
   h4,
-  h5,
-  h6 {
-    font-size: rem(40px);
+  p {
+    color: $color-white;
   }
+  h1 {
+    font-size: rem(28px);
+    // margin: 0;
+  }
+  h3 {
+    // margin: 0;
+    font-size: rem(25px);
+  }
+  a {
+    margin: 10px auto -30px;
+    font-family: $font-body-text;
+    font-size: rem(15px);
+    text-transform: uppercase;
+  }
+}
+
+.page-header-text {
+  margin-top: 32px;
+  h2 {
+    font-size: rem(20px);
+  }
+  p {
+    margin: 15px 0 25px;
+  }
+}
+
+.image-card-container {
+  h3 {
+    margin-top: 10px;
+    font-size: rem(42px);
+  }
+  p {
+    font-size: rem(21px);
+  }
+  a {
+    font-family: $font-body-text;
+    text-transform: uppercase;
+    font-size: rem(18px);
+  }
+}
+
+.home-page-pre-footer-container {
+  margin: 30px auto;
+  h3 {
+    margin-bottom: 10px;
+  }
+}
+
+.footer-flex-container {
+  section {
+    margin: 20px auto;
+    h2 {
+      font-size: rem(26px);
+    }
+    p {
+      font-size: rem(20px);
+    }
+  }
+}
+
+@media only screen and (min-width: $break-phone) {
+  $font-size-tablet-a: rem(17px);
+  $font-size-tablet-h1: rem(38px);
+  $font-size-tablet-h2: rem(36px);
+  $font-size-tablet-h3: rem(32px);
+  $font-size-tablet-p: rem(19px);
+  a {
+    font-size: $font-size-tablet-a;
+  }
+  h1 {
+    font-size: $font-size-tablet-h1;
+  }
+  h2 {
+    font-size: $font-size-tablet-h2;
+  }
+  h3 {
+    font-size: $font-size-tablet-h3;
+  }
+  p {
+    font-size: $font-size-tablet-p;
+  }
+  .hero-image-text-container {
+    h1 {
+      font-size: $font-size-tablet-h1;
+    }
+    h3 {
+      font-size: $font-size-tablet-h3;
+    }
+    a {
+      font-size: $font-size-tablet-a;
+    }
+  }
+  .page-header-text {
+    h2 {
+      font-size: $font-size-tablet-h2;
+    }
+    h3 {
+      font-size: $font-size-tablet-h3;
+    }
+    p {
+      font-size: $font-size-tablet-p;
+    }
+  }
+
+  .image-card-container {
+    h3 {
+      font-size: $font-size-tablet-h3;
+    }
+    p {
+      font-size: $font-size-tablet-p;
+    }
+    a {
+      font-size: $font-size-tablet-a;
+    }
+  }
+
+  .footer-flex-container {
+    section {
+      h2 {
+        font-size: $font-size-tablet-h2;
+      }
+      p {
+        font-size: rem(22px);
+      }
+    }
+  }
+
+}
+@media only screen and (min-width: $break-desktop) {
+  // h1,
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6 {
+  //   font-size: rem(40px);
+  // }
 }

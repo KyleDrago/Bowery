@@ -10,7 +10,6 @@
 .nav-wrapper {
   display: flex;
   align-items: center;
-  padding-left: 15px;
   width: 100%;
   height: $top-nav-height;
 }
@@ -35,11 +34,6 @@
   height: calc(100vh - $top-nav-height);
   // overflow: scroll;
   // visibility: hidden;
-}
-
-.menu-main-nav {
-  li {
-  }
 }
 
 .menu-item {
@@ -78,7 +72,19 @@
   border-top: 2px solid $color-biege;
 }
 
+.logo {
+  padding-left: 15px;
+}
+
 @media only screen and (min-width: $break-phone) {
+  .logo {
+    padding-left: 0;
+  }
+
+  .nav-wrapper {
+    width: $mobile-content-width;
+    margin: auto;
+  }
   .hamburger {
     display: none;
   }
@@ -95,12 +101,6 @@
         border-bottom: 2px solid $color-biege;
       }
     }
-  }
-
-  .main-nav-dropdown-wrapper {
-    margin-left: auto;
-    margin-right: 0;
-    width: 63%;
   }
 
   .main-nav-inner {
@@ -150,7 +150,6 @@
   }
 
   .sub-menu {
-    // display: block; //temp
     position: absolute;
     top: 30px;
     width: 150px;
@@ -159,7 +158,6 @@
     border: 2px solid $color-biege;
     text-align: left;
     padding-left: 15px;
-    // right: 75px;
   }
 
   .sub-menu .menu-item {
@@ -175,5 +173,7 @@
 }
 
 @media only screen and (min-width: $break-desktop) {
-
+  .nav-wrapper {
+    width: $desktop-content-width;
+  }
 }

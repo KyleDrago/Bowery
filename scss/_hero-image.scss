@@ -9,6 +9,7 @@
 
 .hero-image-text-container {
   width: 100%;
+  // margin: auto;
   position: absolute;
   padding-top: $top-nav-height;
   top: 48.5%;
@@ -16,8 +17,10 @@
   text-align: center;
   h1,
   h2,
+  h3,
+  p,
   a {
-    margin: 10px;
+    // margin: 10px;
   }
   a {
     background: $color-biege;
@@ -28,12 +31,25 @@
     display: block;
     margin: 10px auto;
   }
+  p {
+    width: $mobile-content-width;
+    margin: auto;
+  }
 }
 
 @media only screen and (min-width: $break-phone) {
-
+  .hero-image-text-container {
+    top: 48.5%;
+    a {
+      width: 229px;
+    }
+  }
 }
 
 @media only screen and (min-width: $break-desktop) {
-
+  .hero-image-text-container {
+    p {
+      width: $desktop-content-width;
+    }
+  }
 }

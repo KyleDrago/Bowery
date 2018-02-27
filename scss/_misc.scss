@@ -28,6 +28,10 @@
   clear: both;
 }
 
+button:focus {
+  outline: 0;
+}
+
 @media only screen and (min-width: $break-phone) {
 
 }

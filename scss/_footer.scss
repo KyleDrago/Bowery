@@ -1,0 +1,26 @@
+.footer-start {
+  margin-top: 23px;
+}
+
+@media only screen and (min-width: $break-phone) {
+  .footer-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    // margin: 5px;
+  }
+
+  .footer-flex-container > section {
+    // margin: 10px;
+    width: 250px;
+  }
+
+  .social-icons {
+    // flex-basis: 100%;
+  }
+}
+
+@media only screen and (min-width: $break-desktop) {
+
+}

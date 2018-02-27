@@ -10,7 +10,7 @@
     display: block;
     margin: auto;
   }
-  h2,
+  h3,
   p {
     text-align: center;
     margin: 0;
@@ -32,11 +32,15 @@
 @media only screen and (min-width: $break-phone) {
   .image-card-container {
     width: 300px;
+    flex-basis: 1;
   }
   .home-page-grabber-grid-container {
     width: 750px;
     margin: auto;
-    column-count: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // column-count: 2;
   }
 }
 
@@ -47,6 +51,6 @@
   .home-page-grabber-grid-container {
     width: 1100px;
     margin: auto;
-    column-count: 3;
+    // column-count: 3;
   }
 }

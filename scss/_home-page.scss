@@ -1,0 +1,30 @@
+.contact-us-button {
+  width: 140px;
+  text-align: center;
+  background: $color-black;
+  color: $color-biege;
+  padding: 10px 15px;
+  border-radius: 10px;
+  // margin-top: 60px;
+}
+
+@media only screen and (min-width: $break-phone) {
+  .home-page-pre-footer-container {
+    position: relative;
+  }
+
+  .pre-footer-text-wrapper {
+    width: 70%;
+  }
+
+  .contact-us-button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+
+@media only screen and (min-width: $break-desktop) {
+
+}

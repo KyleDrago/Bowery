@@ -32,7 +32,7 @@ function ddd_image_card($args) {
         'dataValue' => null
       ]);
       ?>
-      <h2><?php echo $heading ?></h2>
+      <h3><?php echo $heading ?></h3>
       <p><?php echo $textContent ?></p>
       <a href="<?php echo $link ?>">Learn More</a>
     </section>

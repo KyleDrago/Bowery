@@ -1,12 +1,14 @@
-
+.site-content-wrapper {
+  width: 90%;
+  margin: auto;
+}
 
 @media only screen and (min-width: $break-phone) {
-  .site-content-wrapper {
-    width: 1000px;
-    margin: auto;
-  }
+
 }
 
 @media only screen and (min-width: $break-desktop) {
-
+  .site-content-wrapper {
+    width: 900px;
+  }
 }

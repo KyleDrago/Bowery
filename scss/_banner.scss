@@ -1,0 +1,22 @@
+.home-page-banner-container {
+  width: 100%;
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.home-page-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: $break-phone) {
+
+}
+
+@media only screen and (min-width: $break-desktop) {
+
+}

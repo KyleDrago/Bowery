@@ -6,6 +6,20 @@ a {
   text-decoration: none;
   color: $color-black;
   font-size: rem(20px);
+  font-family: 'Broadway';
+}
+
+h1,
+h2 {
+  font-family: 'Broadway';
+}
+
+h3 {
+  font-family: 'Dancing Script';
+}
+
+p {
+  font-family: 'Linux Libertine';
 }
 
 h1,
@@ -16,6 +30,21 @@ h5,
 h6,
 p {
   color: $color-black;
+}
+
+.home-page-banner-text {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  p {
+    font-family: 'Dancing Script';
+  }
+}
+
+.contact-us-button {
+  font-family: 'Linux Libertine';
 }
 
 @media only screen and (min-width: $break-phone) {

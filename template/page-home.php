@@ -22,7 +22,7 @@ get_header();
   <img src="http://via.placeholder.com/1900x550" alt="" class="hero-image">
   <div class="hero-image-text-container">
     <h1>The Bowery</h1>
-    <h2>A full service salon in Albany, NY</h2>
+    <h3>A full service salon in Albany, NY</h3>
     <a href="" class="book-appointment-button">Book An Apointment</a>
   </div>
 </div>
@@ -40,7 +40,7 @@ get_header();
     [
       'imageName' => 'test-mobile',
       'heading' => 'Test',
-      'text' => 'testing text',
+      'text' => 'testing text testing text testing text testing text testing text testing texttesting text testing text testing text testing text testing text testing text',
       'link' => '#'
     ]);
     do_action('ddd_add_image_card',
@@ -54,7 +54,7 @@ get_header();
     [
       'imageName' => 'test-mobile',
       'heading' => 'Test',
-      'text' => 'testing text',
+      'text' => 'testing text testing text testing text testing text testing text testing text',
       'link' => '#'
     ]);
     do_action('ddd_add_image_card',
@@ -81,6 +81,24 @@ get_header();
     ?>
   </div>
 
+  <div class="home-page-banner-container">
+    <img src="http://via.placeholder.com/1900x550" alt="" class="home-page-banner-image">
+    <p class="home-page-banner-text site-content-wrapper">sunt quis tempor veniam dolor irure nulla fore labore quid minim nisi export
+      minim elit quorum summis magna tamen quae sunt legam illum aliqua sint irure
+      legam culpa fore quid quorum fugiat minim fore duis summis minim sunt dolor
+      cillum</p>
+  </div>
+
+  <div class="site-content-wrapper home-page-pre-footer-container">
+    <div class="pre-footer-text-wrapper">
+      <h2>Why Choose Us?</h2>
+      <h3>Albany comes to us for all their hair needs.</h3>
+      <p>anim cillum duis labore aliqua ipsum tempor minim sint amet veniam culpa quorum
+        aute nisi illum fore velit dolor dolor culpa quae enim nulla minim fore fore
+        eram aute legam</p>
+    </div>
+    <a href="#" class="contact-us-button">Contact Us</a>
+  </div>
 
 <?php
 get_footer();

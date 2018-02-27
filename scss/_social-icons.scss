@@ -1,0 +1,51 @@
+.social-icons {
+  list-style: none;
+  margin: 0 auto 15px;
+  padding: 0;
+  li {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    padding: 0;
+    display: inline-block;
+  }
+}
+
+.social-icon {
+  width: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: $color-white;
+}
+
+.icon {
+  display: inline-block;
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  // display: block;
+}
+
+.facebook {
+  background: $color-facebook-blue;
+}
+
+.instagram {
+  background: $color-instagram-blue;
+}
+
+.twitter {
+  background: $color-twitter-blue;
+}
+
+@media only screen and (min-width: $break-phone) {
+
+}
+
+@media only screen and (min-width: $break-desktop) {
+
+}

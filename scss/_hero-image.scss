@@ -5,11 +5,16 @@
 .hero-image-container {
   padding-top: $top-nav-height;
   position: relative;
+  // display: flex;
 }
+
+// .hero-image-text-container {
+//   margin: auto;
+// }
+
 
 .hero-image-text-container {
   width: 100%;
-  // margin: auto;
   position: absolute;
   padding-top: $top-nav-height;
   top: 48.5%;
@@ -20,7 +25,7 @@
   h3,
   p,
   a {
-    // margin: 10px;
+
   }
   a {
     background: $color-biege;
